@@ -1,15 +1,16 @@
 plugins {
     `kotlin-dsl`
+    kotlin("jvm") version "2.1.21"
 }
 
 dependencies {
     implementation(libs.kotlin.plugin)
     implementation(libs.kotlin.compose.plugin)
 
-    
+
                 implementation(libs.android.gradle.plugin)
                 implementation(libs.hilt.plugin)
-            
+
 }
 
 gradlePlugin {
