@@ -1,0 +1,13 @@
+package com.awesomeapp.module_4_299
+
+sealed class State299_27 {
+    data object Loading : State299_27()
+    data class Success(val data: String) : State299_27()
+    data class Error(val message: String) : State299_27()
+
+    companion object {
+        fun loading() = Loading
+        fun success(data: String) = Success(data)
+        fun error(message: String) = Error(message)
+    }
+}

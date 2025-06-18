@@ -1,0 +1,13 @@
+package com.awesomeapp.module_3_228
+
+sealed class State228_21 {
+    data object Loading : State228_21()
+    data class Success(val data: String) : State228_21()
+    data class Error(val message: String) : State228_21()
+
+    companion object {
+        fun loading() = Loading
+        fun success(data: String) = Success(data)
+        fun error(message: String) = Error(message)
+    }
+}
